@@ -1,13 +1,14 @@
 #!/bin/bash -x
+#Constants
 a=10;
 b=5;
 c=2;
-p=$(( $a+$b*$c ))
-q=$(( $c+$a/$b ))
-r=$(( $a%$b+$c ))
-s=$(( $a*$b+$c ))
+equation1=$(( $a+$b*$c ))
+equation2=$(( $c+$a/$b ))
+equation3=$(( $a%$b+$c ))
+equation4=$(( $a*$b+$c ))
 
-echo $p
-echo $q
-echo $r
-echo $s
+echo $equation1
+echo $equation2
+echo $equation3
+echo $equation4
