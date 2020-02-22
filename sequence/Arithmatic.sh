@@ -7,7 +7,6 @@ equation1=$(( $a+$b*$c ))
 equation2=$(( $c+$a/$b ))
 equation3=$(( $a%$b+$c ))
 equation4=$(( $a*$b+$c ))
-
 echo $equation1
 echo $equation2
 echo $equation3
