@@ -7,16 +7,16 @@ do
    do
       if [[ $(($i % $j)) -eq 0 ]]
       then
-         flag=0
-			break
+          flag=0
+	  break
       else
-         flag=1
+          flag=1
       fi
    done
-	if [[ $flag == 1 ]]
-      then
-         echo $i
-	fi
+   if [[ $flag == 1 ]]
+   then
+       echo $i
+   fi
 done
 
 
