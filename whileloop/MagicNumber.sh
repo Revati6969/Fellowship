@@ -6,17 +6,16 @@ end=100
 middle=$(( $bigining+$end/2 ))
 while [[ $begining -le $end ]]
 do
-	# find mindal number
    if [[ $middle -eq $number ]]
    then
-      echo $middle
-      break
-	elif [[ $number -lt $middle ]]
+       echo $middle
+       break
+   elif [[ $number -lt $middle ]]
    then
-      end=$middle
-      middle=$(( ($bigining+$end) / 2 ))
+       end=$middle
+       middle=$(( ($bigining+$end) / 2 ))
    else
-      bigining=$middle
-      middle=$(( ($bigining+$end) / 2 ))
+       bigining=$middle
+       middle=$(( ($bigining+$end) / 2 ))
    fi
 done
