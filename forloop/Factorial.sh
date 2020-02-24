@@ -3,6 +3,6 @@ read -p "enter number : " number
 factorial=1
 for (( index=1; index<=$number; index++ ))
 do
-		factorial=$(($factorial*index))
+   factorial=$(($factorial*index))
 done
 echo $factorial
