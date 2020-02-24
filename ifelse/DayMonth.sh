@@ -7,29 +7,29 @@ june=6
 
 if [[ month -ge $march && month -le $june ]]
 then
-	if [[ month -eq $march ]]
-	then
-		if [[ day -ge 20 && day -le 31 ]]
-		then 
-			echo True
-		else
-			echo False
-		fi
-	elif [[ month -eq $june ]]
-	then
-		if [[ day -ge 1 && day -le 20 ]]
-		then
-			echo True
-		else
-			echo False
-		fi
-	elif [[ month -gt $march && month -lt $june ]]
-	then
-		echo true
+    if [[ month -eq $march ]]
+    then
+        if [[ day -ge 20 && day -le 31 ]]
+	then 
+            echo True
 	else
-		echo false
+	    echo False
 	fi
-else
+    elif [[ month -eq $june ]]
+    then
+	if [[ day -ge 1 && day -le 20 ]]
+	then
+	    echo True
+	else
+	    echo False
+	fi
+    elif [[ month -gt $march && month -lt $june ]]
+    then
+	echo true
+    else
 	echo false
+    fi
+else
+    echo false
 fi
 
