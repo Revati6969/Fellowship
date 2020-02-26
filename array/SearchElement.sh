@@ -1,6 +1,9 @@
 #!/bin/bash -x
-#Constant
+
+#variable
 i=0
+
+#Storing random numbers into array
 while [[ $i -lt 10 ]]
 do
 	temp=$(($RANDOM%900 + 100))
@@ -9,7 +12,8 @@ do
 	temp=0
 	i=$(($i+1))
 done
-echo ${Number[@]}
+
+#Second smalles
 function SecSmallest()
 {
 arr=("$@")
@@ -27,6 +31,8 @@ done
 echo $small "Smallest and"
 echo $secsmall "Second Smallest"
 }
+
+#Second Largest
 function SecLargest()
 {
 arr1=("$@")
